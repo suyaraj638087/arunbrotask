@@ -8,10 +8,9 @@
 	width:100%;
 	padding-top:2rem;
 	background-color:white;
-	z-index:1;
+	z-index:10;
 	padding:10px;
 	position:fixed;
-	display:none;
 	box-shadow:0 0 10px 1px grey;
 	
 }
@@ -65,7 +64,7 @@ margin:0 auto;
 	padding-top:8rem;
 }
 .hpb-home h1{
-	font-size: 65px;
+	font-size: 50px;
     font-weight: 700;
     margin-bottom: 14px;
     color: #2b4b80;
@@ -358,7 +357,7 @@ color:#7b40c0;
 	width:90%;
 	margin:0 auto;
 	text-align:center;
-	z-index:0;
+	z-index:-10;
 }
 .whole-total{
 	padding-top:3rem;
@@ -566,8 +565,29 @@ span{
 	color:#7b40c0;
 	padding-left:10px;
 }
-@media(min-width:320px){
 
+@media(min-width:320px){
+	.nav-ab a{
+	text-decoration: none;
+	line-height:30px;
+	}
+.d-none{
+	display:block;
+}
+.d-block{
+	display:none;
+}
+.d-none button i{
+	font-size:20px;
+}
+.none{
+	display:none;
+}
+.nav-ab{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
 .container-home{
 width:100%;
 margin:0 auto;
@@ -717,7 +737,9 @@ line-height:30px;
 }
 }
 @media(min-width:720px){
-
+.d-none{
+	display:none;
+}
 .container-home{
 width:90%;
 text-align:center;
@@ -844,12 +866,23 @@ margin:0 auto;
 .lenear-col1{
 	width:50%;
 }
+.d-block{
+	display:block;
+}
+.d-blockbs{
+	display:none;
+}
 .lenear-col2{
 	width:50%;
 }
 }
 @media(min-width:1020px){
-
+	.d-block{
+	display:block;
+}
+.d-none{
+	display:none;
+}
 .container-home{
 width:80%;
 margin:0 auto;

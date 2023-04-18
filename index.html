@@ -18,7 +18,7 @@
 				<img src="image/logo.png">
 
 			</div>
-			<div class="col2-nav">
+			<div class="col2-nav d-block" >
 				<div class="nav-a">	
 				<a href="#Home">Home</a>
 				<a href="#Home">About Us</a>
@@ -28,10 +28,26 @@
 				<a href="#ic">pages</a>
 				</div>	
 			</div>
-			<div class="col3-nav">
-				<div class="nav-button">
+			<div class="col3-nav d-block d-blockbs">
+				<div class="nav-button ">
 					<a href="">Contact Us</a>
 				</div>
+			</div>
+			<div class="d-none">
+			  <button onclick="show()"><i class="bi bi-border-width"></i></button>	
+			</div>
+			<!-- <div class="nav-icon"> -->
+										<!-- <i class="bi bi-border-width"></i> -->
+									<!-- </div>	 -->
+		</div>
+		<div class="none d-none" id="rr" >		
+		<div class="nav-ab" >
+				<a href="#Home">Home</a>
+				<a href="#Home">About Us</a>
+				<a href="#business">Services</a>
+				<a href="#footer">Contact</a>
+				<a href="#pricing">Blog</a>
+				<a href="#ic">pages</a>
 			</div>
 		</div>
 	</div>
@@ -402,5 +418,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="owl/owl.carousel.min.js"></script>
     <script src="main.js"></script>
+	<script>
+	 function show(){
+		let s=document.getElementById("rr");
+		s.classList.toggle("none");
+		}
+	</script>
 </body>
 </html>
